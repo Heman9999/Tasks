@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+div {
+  background-color: yellow;
+  width: 100vw;
+}
+
+ul {
+  width: 100%;
+  list-style: none;
+  display: grid;
+  gap: 50px;
+
+  li {
+    width: 100%;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    header {
+      // background-color: aqua;
+      width: 100%;
+
+      h1 {
+        padding: 10px;
+        text-align: center;
+        color: black;
+        font-size: 50px;
+        text-align: center;
+        text-shadow: 5px 5px 10px black;
+      }
+    }
+
+    main {
+      font-size: 20px;
+      width: 80%;
+      height: 100%;
+
+      p {
+        div {
+          // background-color: red;
+          width: 100%;
+        }
+
+        text-align: center;
+      }
+    }
+
+    footer {
+      // background-color: green;
+      width: 80%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      // gap: 10px;
+      // padding-top: /20px;
+      padding: 20px;
+      max-height: 80px;
+      overflow: hidden;
+
+      h1 {
+        justify-self: start;
+        min-width: 200px;
+        min-height: 50px;
+        overflow: hidden;
+        text-align: center;
+        background-color: white;
+        padding: 5px;
+        border-radius: 10px;
+        border: 2px solid black;
+      }
+
+      button {
+        min-width: 200px;
+        text-align: center;
+        background-color: blue;
+        justify-self: end;
+        border-radius: 10px;
+        font-size: 20px;
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+
+        &:hover {
+          background-color: red;
+        }
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width : 700px){
+
+  div {
+    background-color: green;
+  
+    ul {
+      padding: 0;
+      // background-color: aq ua;
+      gap: 20px;
+  
+      li {
+        padding: 0;
+  
+        header {
+          padding: 0;
+  
+          h1 {
+            font-size: 35px;
+          }
+        }
+  
+        main {
+          padding: 0;
+          font-size: 20px;
+  
+          p {
+            div {
+              // background-color: red;
+              width: 100%;
+            }
+  
+            text-align: center;
+          }
+        }
+  
+        footer {
+          width: 80%;
+          max-height: 30px;
+          // background-color: white;
+          padding: 1px;
+          gap: 10px;
+          padding-left: 10px;
+          padding-right: 10px;
+  
+          h1 {
+            display: inline;
+            min-width: 100px;
+            min-height: 32px;
+            font-size: 20px;
+            text-align: center;
+            border-radius: 10px;
+            padding-top: 0px;
+          }
+  
+          button {
+            font-size: 20px;
+            min-width: 100px;
+            text-align: center;
+            max-height: 32px;
+            background-color: blue;
+            // padding: 5px;
+  
+            a {
+              color: white;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width : 500px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  div {
+    background-color: white;
+
+    ul {
+      padding: 0;
+      // background-color: aq ua;
+      gap: 20px;
+
+      li {
+        padding: 0;
+
+        header {
+          padding: 0;
+
+          h1 {
+            font-size: 25px;
+          }
+        }
+
+        main {
+          padding: 0;
+          font-size: 20px;
+
+          p {
+            div {
+              // background-color: red;
+              width: 100%;
+            }
+
+            text-align: center;
+          }
+        }
+
+        footer {
+          width: 100%;
+          max-height: 40px;
+          // background-color: green;
+          padding: 2px;
+          // padding-right: 10px;
+          gap: 10px;
+
+          h1 {
+            width: 10px;
+            height: 20px;
+            font-size: 15px;
+            // overflow: scroll;
+            text-align: center;
+            border: none;
+          }
+
+          button {
+            max-width: 50px;
+            text-align: center;
+            max-height: 100%;
+            background-color: blue;
+            border-radius: none;
+            border: none;
+            padding: 5px;
+
+            a {
+              color: white;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
